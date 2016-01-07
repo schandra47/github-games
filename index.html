@@ -31,7 +31,7 @@
     <div id="menu">
       <p id="start"><a href="javascript:play();">Press Space to Play.</a></p>
       <p><canvas id="upcoming"></canvas></p>
-      <p>score <span id="score">00000</span></p>
+      <p>score <span id="score">000</span></p>
       <p>rows <span id="rows">0</span></p>
     </div>
     <canvas id="canvas">
@@ -76,7 +76,7 @@
         ctx     = canvas.getContext('2d'),
         ucanvas = get('upcoming'),
         uctx    = ucanvas.getContext('2d'),
-        speed   = { start: 0.6, decrement: 0.005, min: 0.1 }, // how long before piece drops by 1 row (seconds)
+        speed   = { start: 0.6,0.9 decrement: 0.005,0.002, min: 0.1 }, // how long before piece drops by 1 row (seconds)
         nx      = 10, // width of tetris court (in blocks)
         ny      = 20, // height of tetris court (in blocks)
         nu      = 5;  // width/height of upcoming preview (in blocks)
